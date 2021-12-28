@@ -1,0 +1,148 @@
+.github {
+  background-color: rgb(1, 6, 20);
+}
+
+.github-header-title {
+  padding: 2rem 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+
+.github-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.github-bar {
+  width: 40%;
+  height: 20px;
+  border-radius: 5rem;
+  margin-bottom: 2rem;
+  /*backgeound for variety of browsers*/
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 12, 59, 1) 0%,
+    rgba(0, 128, 0, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 12, 59, 1) 0%,
+    rgba(0, 128, 0, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(255, 12, 59, 1) 0%,
+    rgba(0, 128, 0, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008000', endColorstr='#FF0C3B', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(255, 12, 59, 1) 0%,
+    rgba(0, 128, 0, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 59, 1) 0%,
+    rgba(0, 128, 0, 1) 100%
+  );
+}
+
+.github-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github-content-pic {
+  width: 40%;
+}
+
+.github-content-pic img {
+  width: 100%;
+}
+
+.github-content-links {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: start;
+  padding: 0rem 3rem;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 26px;
+}
+.github-content-links h3 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.github-content-insta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.github-content-insta p {
+  margin-left: 1rem;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 990px) {
+  .github-content-links {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .github-content-links h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .github-content-links {
+    margin-top: 2rem;
+  }
+  .github-content {
+    flex-direction: column;
+  }
+  .github-content-links {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 23px;
+  }
+  .github-content-insta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .github-content-links {
+    font-size: 18px;
+  }
+}
